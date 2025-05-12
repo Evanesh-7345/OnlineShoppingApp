@@ -29,10 +29,12 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.shoppy.shopkart.R
 import com.shoppy.shopkart.navigation.BottomNavScreens
 import com.shoppy.shopkart.screens.details.DetailsScreenViewModel
@@ -93,7 +95,7 @@ fun BackButton(modifier: Modifier = Modifier, navController: NavController, view
                             navController.popBackStack() //this popBackStack is to pop Previous Home Screen
                             navController.popBackStack()
                             navController.navigate(BottomNavScreens.Home.route)
-                            Toast.makeText(context,"Product Removed",Toast.LENGTH_SHORT).show()
+                            Toast.makeText(context, "Product Removed", Toast.LENGTH_SHORT).show()
                         })
             }else {
 
@@ -110,3 +112,4 @@ fun BackButton(modifier: Modifier = Modifier, navController: NavController, view
         }
     }
 }
+

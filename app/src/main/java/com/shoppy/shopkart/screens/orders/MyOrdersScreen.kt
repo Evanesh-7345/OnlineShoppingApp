@@ -82,7 +82,7 @@ fun OrdersScreen(navController: NavController,viewModel: MyOrderViewModel = hilt
                 Image(
                     painter = painterResource(id = R.drawable.empty_cart),
                     contentScale = ContentScale.Crop,
-                    contentDescription = "No Orders",
+                    contentDescription = "Your orders will appear here",
                     modifier = Modifier
                         .size(300.dp)
                         .padding(bottom = 10.dp)

@@ -209,6 +209,7 @@ fun AddProductSliderAdmin(
 
                             Text(text = "Earphones", style = TextStyle(fontFamily = roboto))
                         }
+
                     }
                 }
 
